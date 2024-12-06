@@ -1,6 +1,6 @@
 {
-  "name": "tinyforge/cli",
-  "description": "CLI for TinyForge framework",
+  "name": "ironflow/cli",
+  "description": "CLI for IronFlow framework",
   "type": "library",
   "license": "MIT",
   "autoload": {
