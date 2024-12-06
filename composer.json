@@ -1,5 +1,5 @@
 {
-  "name": "ironflow/cli",
+  "name": "ironflow/console",
   "description": "CLI for IronFlow framework",
   "type": "library",
   "license": "MIT",
