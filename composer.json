@@ -1,0 +1,24 @@
+{
+  "name": "tinyforge/cli",
+  "description": "CLI for TinyForge framework",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Forge\\CLI\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Aure",
+      "email": "147180124+AureDulvresse@users.noreply.github.com"
+    }
+  ],
+  "bin": [
+    "bin/forge"
+  ],
+  "require": {
+    "symfony/console": "^7.1",
+    "monolog/monolog": "^3.8"
+  }
+}
