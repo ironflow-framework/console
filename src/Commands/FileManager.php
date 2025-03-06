@@ -96,7 +96,8 @@ class FileManager extends Command
             file_put_contents($factoryFile, $factoryContent);
             $io->success("Factory créée : " . $logger->bold($factoryFile));
         } catch (\Throwable $th) {
-            $io->error("Une erreur s'est produite");
+            $io->error("Une erreur s'est produite", $th->getMessage());
+            return Command::FAILURE;
         }
     }
 
@@ -112,7 +113,7 @@ class FileManager extends Command
             $io->success("Contrôleur créé : " . $logger->bold($controllerFile));
             return Command::SUCCESS;
         } catch (\Throwable $th) {
-            $io->error("Une erreur s'est produite");
+            $io->error("Une erreur s'est produite", $th->getMessage());
             return Command::FAILURE;
         }
     }
